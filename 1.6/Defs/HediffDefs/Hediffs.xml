@@ -1,0 +1,443 @@
+<Defs>
+
+<HediffDef>
+	<hediffClass>HediffWithComps</hediffClass>
+      <defName>VPE_EngagedStealthMode</defName>
+     <label>Stealth Mode Engaged</label>
+     <defaultLabelColor>(0.50, 0.50, 0.50)</defaultLabelColor>
+      <description>Activated light-refracting nano archites acting as a temporary stealth field.</description>
+      <descriptionShort>Activated light-refracting nano archites acting as a temporary stealth field.</descriptionShort>
+      <isBad>false</isBad>
+	  <comps>
+<li Class="HediffCompProperties_Invisibility">
+<visibleToPlayer>true</visibleToPlayer>
+</li>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>5800</min>
+            <max>5800</max>
+          </disappearsAfterTicks>
+		  <showRemainingTime>True</showRemainingTime>
+        </li>
+      </comps>
+    </HediffDef>
+	
+	<HediffDef>
+	<hediffClass>HediffWithComps</hediffClass>
+      <defName>VPE_EngagedAmbushMode</defName>
+     <label>Ambush Precept Engaged</label>
+     <defaultLabelColor>(0.50, 0.50, 0.50)</defaultLabelColor>
+      <description>Activated light-refracting nano archites acting as a temporary stealth field, the effect will disappear upon attacking.</description>
+      <descriptionShort>Activated light-refracting nano archites acting as a temporary stealth field, the effect will disappear upon attacking.</descriptionShort>
+      <isBad>false</isBad>
+<comps>
+<li>
+<compClass>VanillaPsycastsExpanded.Nightstalker.HediffComp_DissapearsOnAttack</compClass>
+</li>
+<li Class="HediffCompProperties_Invisibility">
+<visibleToPlayer>true</visibleToPlayer>
+</li>
+</comps>
+    </HediffDef>
+
+<HediffDef>
+      <defName>MechOptimizationSTNL</defName>
+      <label>Alpha Optimization</label>
+      <description>Rewriten subroutines allow this mechanoid to perform better than factory units.</description>
+      <descriptionShort>Rewriten subroutines allow this mechanoid to perform better than factory units.</descriptionShort>
+      <isBad>false</isBad>
+      <stages>
+        <li>
+         <statFactors>
+<MoveSpeed>1.20</MoveSpeed>
+<WorkSpeedGlobal>1.75</WorkSpeedGlobal>
+<VEF_RangeAttackSpeedFactor>2</VEF_RangeAttackSpeedFactor>
+<VEF_MeleeAttackSpeedFactor>2</VEF_MeleeAttackSpeedFactor>
+</statFactors>
+        </li>
+      </stages>
+    </HediffDef>
+
+<HediffDef>
+      <defName>MechCombatUpgradeSTNL</defName>
+      <label>Delta Reinforcement</label>
+      <description>A low energy archite shield protects this mechanoid.</description>
+      <descriptionShort>A low energy archite shield protects this mechanoid.</descriptionShort>
+      <isBad>false</isBad>
+      <stages>
+        <li>
+         <statFactors>
+		 <IncomingDamageFactor>0.65</IncomingDamageFactor>
+		 </statFactors>
+        </li>
+      </stages>
+    </HediffDef>
+
+<HediffDef>
+	<defName>EpsilonShutdownSTNL</defName>
+	<label>Epsilon Shutdown</label>
+	<description>This mechanoid has been shut down by a psychic hack.</description>
+	<defaultLabelColor>(1.0, 0, 0)</defaultLabelColor>
+	<lethalSeverity>1</lethalSeverity>
+	<canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+	<makesSickThought>true</makesSickThought>
+	<scenarioCanAdd>true</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<setMax>0</setMax>
+				</li>
+			</capMods>
+		</li>
+	</stages>
+</HediffDef>
+	
+<HediffDef>
+      <defName>AlphaMind-linkSTNL</defName>
+      <label>Alpha Mech-Mind</label>
+      <description>The final level of synergy between the psylink and mechlink, granting you additional bandwidth and control groups.</description>
+      <descriptionShort>The final level of synergy between the psylink and mechlink, granting you additional bandwidth and control groups.</descriptionShort>
+      <isBad>false</isBad>
+	  <minSeverity>0.01</minSeverity>
+	  <maxSeverity>1</maxSeverity>
+ <stages>
+<li>
+<label>Level 1</label>
+<minSeverity>0.11</minSeverity>
+<statOffsets>
+<MechBandwidth>10</MechBandwidth>
+<MechControlGroups>1</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>0.21</minSeverity>
+<label>Level 2</label>
+<statOffsets>
+<MechBandwidth>20</MechBandwidth>
+<MechControlGroups>2</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>0.31</minSeverity>
+<label>Level 3</label>
+<statOffsets>
+<MechBandwidth>30</MechBandwidth>
+<MechControlGroups>3</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>0.41</minSeverity>
+<label>Level 4</label>
+<statOffsets>
+<MechBandwidth>40</MechBandwidth>
+<MechControlGroups>4</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>0.51</minSeverity>
+<label>Level 5</label>
+<statOffsets>
+<MechBandwidth>50</MechBandwidth>
+<MechControlGroups>5</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>0.65</minSeverity>
+<label>Level 6</label>
+<statOffsets>
+<MechBandwidth>60</MechBandwidth>
+<MechControlGroups>6</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>0.75</minSeverity>
+<label>Level 7</label>
+<statOffsets>
+<MechBandwidth>70</MechBandwidth>
+<MechControlGroups>7</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>0.85</minSeverity>
+<label>Level 8</label>
+<statOffsets>
+<MechBandwidth>80</MechBandwidth>
+<MechControlGroups>8</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>0.90</minSeverity>
+<label>Level 9</label>
+<statOffsets>
+<MechBandwidth>90</MechBandwidth>
+<MechControlGroups>9</MechControlGroups>
+</statOffsets>
+</li>
+<li>
+<minSeverity>1</minSeverity>
+<label>Level 10</label>
+<statOffsets>
+<MechBandwidth>100</MechBandwidth>
+<MechControlGroups>10</MechControlGroups>
+</statOffsets>
+</li>
+</stages>
+</HediffDef>
+
+<HediffDef>
+<hediffClass>HediffWithComps</hediffClass>
+      <defName>Apocriton-linkSTNL</defName>
+      <label>Mechanitor Precept: Apocritia</label>
+      <description>This Mechlink upgrade is temporary, granting you 30 charges of the apocriton's resurrection ability to use on a dead mech.</description>
+      <descriptionShort>This Mechlink upgrade is temporary, granting you 30 charges of the apocriton's resurrection ability to use on a dead mech.</descriptionShort>
+      <isBad>false</isBad>
+	  <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>60000</min>
+            <max>60000</max>
+          </disappearsAfterTicks>
+		  <showRemainingTime>True</showRemainingTime>
+        </li>
+      </comps>
+ <stages>
+<li>
+</li>
+</stages>
+ <abilities>
+      <li>RaiseMechSTNL</li>
+    </abilities>
+</HediffDef>
+
+<AbilityDef>
+	<defName>RaiseMechSTNL</defName>
+	<label>Project Mech-Lich</label>
+	<description>Resurrect a dead mechanoid by externally supercharging its self-repair processes. The mechanoid will come back with some but not all of its wounds healed, the process will place enemy mechanoids under your control. Cannot resurrect super heavy mechs.</description>
+	<iconPath>UI/Abilities/MechResurrection</iconPath>
+	<cooldownTicksRange>120</cooldownTicksRange>
+	<warmupStartSound>MechResurrect_Warmup</warmupStartSound>
+	<warmupEffecter>ApocrionAoeWarmup</warmupEffecter>
+	<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+	<useAverageTargetPositionForWarmupEffecter>true</useAverageTargetPositionForWarmupEffecter>
+	<hostile>false</hostile>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<statBases>
+		<Ability_EffectRadius>5</Ability_EffectRadius>
+	</statBases>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<drawAimPie>true</drawAimPie>
+		<range>9.9</range>
+		<warmupTime>4</warmupTime>
+		<soundCast>MechResurrect_Cast</soundCast>
+		<requireLineOfSight>false</requireLineOfSight>
+		<targetParams>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetCorpses>true</canTargetCorpses>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>true</canTargetMechs>
+		</targetParams>
+	</verbProperties>
+	<comps>
+		<li Class="VPE_MechanitorSTNL.CompProperties_ApocritiaResurrection">
+			<appliedEffecterDef>MechResurrected</appliedEffecterDef>
+			<MakesOverseer>True</MakesOverseer>
+		</li>
+	</comps>
+</AbilityDef>
+
+<HediffDef>
+      <defName>BandwidthAssistSTNL</defName>
+	  <defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+      <label>Assisted Control</label>
+      <description>Optimized data transfer halves the bandwidth cost of this mechanoid.</description>
+      <descriptionShort>Optimized data transfer halves the bandwidth cost of this mechanoid.</descriptionShort>
+      <isBad>false</isBad>
+ <stages>
+<li>
+<statFactors>
+<BandwidthCost>0.5</BandwidthCost>
+</statFactors>
+</li>
+</stages>
+</HediffDef>
+
+<!-- Milira -->
+
+<HediffDef>
+	<defName>MilianChargeSTNL</defName>
+	<label>Milian Charge</label>
+	<description>This mechanoid is being enhanced by a Milian Mechanitor.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.30</offset>
+				</li>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>0.15</offset>
+				</li>
+			</capMods>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>30000</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>MilinkHumanSTNL</defName>
+	<label>Mi-Link</label>
+	<description>The connection between a mechanoid and a person, halves psyfocus and neural heat cost of abilities by offloading part of the psychic strain onto the mechanoid.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+        <statFactors>
+		<VPE_PsyfocusCostFactor>0.5</VPE_PsyfocusCostFactor>
+		<PsychicEntropyGain>0.5</PsychicEntropyGain>
+		</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>30000</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>MilinkMechSTNL</defName>
+	<label>Mi-Link</label>
+	<description>The connection between a mechanoid and a person, this mechanoid is using the caster's psylink as a second subcore, effectively doubling its attack speed and consciousness.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>2</postFactor>
+				</li>
+			</capMods>
+			<statFactors>
+			<VEF_RangeAttackSpeedFactor>2</VEF_RangeAttackSpeedFactor>
+			<VEF_MeleeAttackSpeedFactor>2</VEF_MeleeAttackSpeedFactor>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>30000</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<!-- Auto Blink -->
+
+<HediffDef MayRequire="rabiosus.autoblink">
+	<defName>VPE_AutoBlinkSTNL</defName>
+	<label>Precept: Blink</label>
+	<description>This creature contains a miniature skipgate that can be used as a short-range teleportation method.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 0, 1)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+		</li>
+	</stages>
+	<comps>
+		<li Class="AutoBlink.HediffCompProperties_AutoBlink">
+			<delayAfterEligibleTicks>30</delayAfterEligibleTicks>
+			<cellsBeforeTarget>1</cellsBeforeTarget>
+			<blinkIntervalTicks>30</blinkIntervalTicks>
+			<minDistanceToBlink>1</minDistanceToBlink>
+			<!-- ====== Gizmo settings ====== -->
+			<!-- If false, the gizmo button will be hidden.
+                Also disables interaction via multi-selection, and settings will be locked to what's defined in the Def. -->
+			<drawGizmo>true</drawGizmo>
+			<!-- Optional: Label displayed on the gizmo button. If not set, AutoBlink.AutoBlink_Label will be used -->
+			<gizmoLabel>Blink</gizmoLabel>
+			<!-- Optional: Path to the gizmo button icon -->
+			<gizmoIconPath>UI_Mechanitor/Abilities/BlinkUpgradeSTNL</gizmoIconPath>
+			<!-- ====== Sound and visual effect settings ====== -->
+			<!-- Effects played on the origin cell before blinking -->
+			<!-- SoundDefs -->
+			<preBlinkSoundDefs>
+				<li>AutoBlink_Skip_Small</li>
+			</preBlinkSoundDefs>
+			<!-- MoteDefs -->
+			<preBlinkMoteDefs>
+				<!-- leave empty if none -->
+			</preBlinkMoteDefs>
+			<!-- EffecterDefs -->
+			<preBlinkEffecterDefs>
+				<li>Skip_Entry</li>
+			</preBlinkEffecterDefs>
+			<!-- Effects played on the destination cell after blinking -->
+			<!-- SoundDefs -->
+			<postBlinkSoundDefs>
+				<li>AutoBlink_Skip_Exit_Small</li>
+			</postBlinkSoundDefs>
+			<!-- MoteDefs -->
+			<postBlinkMoteDefs>
+        </postBlinkMoteDefs>
+			<!-- EffecterDefs -->
+			<postBlinkEffecterDefs>
+				<li>Skip_ExitNoDelay</li>
+			</postBlinkEffecterDefs>
+			<!-- Optional: List of jobs that disable auto-blink.
+                Auto-blink will not trigger while performing any of the jobs listed here. -->
+			<excludedJobDefs>
+			</excludedJobDefs>
+		</li>
+	</comps>
+</HediffDef>
+
+</Defs>

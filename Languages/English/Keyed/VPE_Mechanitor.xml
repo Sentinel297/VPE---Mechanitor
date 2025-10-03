@@ -1,0 +1,18 @@
+<LanguageData>
+	<!-- ====Selection Window==== -->
+	<!-- Shared -->
+	<VPE_MHFC_TitleSTNL>M.H.F.C: Mechanoid Hive Factory Command</VPE_MHFC_TitleSTNL>
+	<!-- Summon mech biotech -->
+	<VPE_SelectMechToProduceSTNL>Select a mech to produce:</VPE_SelectMechToProduceSTNL>
+	<!-- Specific mechanoid -->
+	<VPE_MechanoidsToDropSTNL>Mechanoids to drop: {0}</VPE_MechanoidsToDropSTNL>
+	<!-- ====Confirmation Window==== -->
+	<VPE_ConfirmSelection_STNL>Confirm Selection:</VPE_ConfirmSelection_STNL>
+	<VPE_MechName_STNL>{0}</VPE_MechName_STNL>
+	<VPE_BandwidthCost_STNL>Bandwidth Cost: {0}</VPE_BandwidthCost_STNL>
+	<VPE_ArmorSharp_STNL>Armor (Sharp): {0}</VPE_ArmorSharp_STNL>
+	<VPE_ArmorBlunt_STNL>Armor (Blunt): {0}</VPE_ArmorBlunt_STNL>
+	<VPE_ArmorHeat_STNL>Armor (Heat): {0}</VPE_ArmorHeat_STNL>
+	<VPE_ConfirmButton_STNL>Confirm</VPE_ConfirmButton_STNL>
+	<VPE_CancelButton_STNL>Return</VPE_CancelButton_STNL>
+</LanguageData>

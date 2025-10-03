@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+    <defName>VPE_MechanitorSTNL</defName>
+    <label>Mechanitor</label>
+    <description>Manifest and reinforce your own army of mechanoids.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Manifest and reinforce your own army of mechanoids.</tooltip>
+	    <lockedReason>Mech-Mind only</lockedReason>
+    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+  
+  <VanillaPsycastsExpanded.PsycasterPathDef>
+    <defName>VPE_MechanitorWorkerSTNL</defName>
+    <label>Worker Mechanitor</label>
+    <description>Conjure a swarm of workers for your colony.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Conjure a swarm of workers for your colony.</tooltip>
+	    <lockedReason>Mech-Mind only</lockedReason>
+    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+  
+  <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="Aoba.DeadManSwitch.Core">
+    <defName>VPE_DMSMechanitorSTNL</defName>
+    <label>DMS Mechanitor</label>
+    <description>Conjure a swarm of workers for your colony.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Conjure a swarm of workers for your colony.</tooltip>
+	    <lockedReason>Mech-Mind only</lockedReason>
+    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+  
+  <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="sarg.alphamechs">
+    <defName>VPE_AlphaMechanitorSTNL</defName>
+    <label>Alpha Mechanitor</label>
+    <description>Conjure a swarm of mechanoids for your colony.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
+	    <lockedReason>Mech-Mind only</lockedReason>
+    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+  
+  <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="Mlie.ReinforcedMechanoid2">
+    <defName>VPE_ReinforcedMechanitorSTNL</defName>
+    <label>Reinforced Mechanitor</label>
+    <description>Conjure a swarm of mechanoids for your colony.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
+	    <lockedReason>Mech-Mind only</lockedReason>
+    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+  
+    <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="Ancot.MiliraRace">
+    <defName>VPE_MilianMechanitorSTNL</defName>
+    <label>Milian Mechanitor</label>
+    <description>Conjure a swarm of mechanoids for your colony.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
+	    <lockedReason>Mech-Mind only</lockedReason>
+    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+  
+    <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="Nyar.NCLvsTW">
+    <defName>VPE_WarfareMechanitorSTNL</defName>
+    <label>Warfare Mechanitor</label>
+    <description>Conjure a swarm of mechanoids for your colony.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
+	    <lockedReason>Mech-Mind only</lockedReason>
+    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+  
+    <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="src.Core.markeazzyh">
+    <defName>VPE_MihoMechanitorSTNL</defName>
+    <label>Miho Mechanitor</label>
+    <description>Conjure a swarm of mechanoids for your colony.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Misc</tab>
+    <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
+	    <lockedReason>Mech-Mind only</lockedReason>
+    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+  
+</Defs>

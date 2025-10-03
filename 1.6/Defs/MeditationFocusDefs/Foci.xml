@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<MeditationFocusDef>
+        <defName>VPE_MechanitorFociSTNL</defName>
+        <label>Mech-Mind</label>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.MeditationFocusExtension">
+                <icon>UI_Mechanitor/PsyfocusIcons/Hexagon</icon>
+                <pointsOnly>true</pointsOnly>
+            </li>
+        </modExtensions>
+    </MeditationFocusDef>
+</Defs>
