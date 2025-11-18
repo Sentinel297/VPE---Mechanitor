@@ -51,8 +51,8 @@
          <statFactors>
 <MoveSpeed>1.20</MoveSpeed>
 <WorkSpeedGlobal>1.75</WorkSpeedGlobal>
-<RangedCooldownFactor>2</RangedCooldownFactor>
-<MeleeCooldownFactor>2</MeleeCooldownFactor>
+<VEF_RangeAttackSpeedFactor>2</VEF_RangeAttackSpeedFactor>
+<VEF_MeleeAttackSpeedFactor>2</VEF_MeleeAttackSpeedFactor>
 </statFactors>
         </li>
       </stages>
@@ -359,8 +359,8 @@
 				</li>
 			</capMods>
 			<statFactors>
-			<RangedCooldownFactor>2</RangedCooldownFactor>
-			<MeleeCooldownFactor>2</MeleeCooldownFactor>
+			<VEF_RangeAttackSpeedFactor>2</VEF_RangeAttackSpeedFactor>
+			<VEF_MeleeAttackSpeedFactor>2</VEF_MeleeAttackSpeedFactor>
 			</statFactors>
 		</li>
 	</stages>
