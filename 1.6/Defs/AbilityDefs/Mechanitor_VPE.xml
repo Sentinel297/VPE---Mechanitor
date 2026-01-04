@@ -2,106 +2,106 @@
 <Defs>
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_MechlinkSTNL</defName>
-		<label>Manifest Mechlink</label>
-		<description>Uses the power of the psylink to create a mechlink.</description>
-		<iconPath>Things/Pawn/Humanlike/Apparel/Mechlink</iconPath>
-		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-		<goodwillImpact>0</goodwillImpact>
-		<castTime>30</castTime>
-		<durationTime>0</durationTime>
-		<targetMode>Self</targetMode>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>1</level>
-				<order>1</order>
-				<psyfocusCost>0.3</psyfocusCost>
-				<entropyGain>35</entropyGain>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_Hediff">
-				<hediff>MechlinkImplant</hediff>
-			</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+	<defName>VPE_MechlinkSTNL</defName>
+	<label>Manifest Mechlink</label>
+	<description>Uses the power of the psylink to create a mechlink.</description>
+	<iconPath>Things/Pawn/Humanlike/Apparel/Mechlink</iconPath>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<goodwillImpact>0</goodwillImpact>
+	<castTime>30</castTime>
+	<durationTime>0</durationTime>
+	<targetMode>Self</targetMode>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>1</level>
+			<order>1</order>
+			<psyfocusCost>0.3</psyfocusCost>
+			<entropyGain>35</entropyGain>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>MechlinkImplant</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_MilitorSummonSTNL</defName>
-		<label>Summon Militor</label>
-		<description>Hack a distant mechanoid factory to produce a Militor and skip it directly to you. Bandwidth Cost: 1</description>
-		<iconPath>UI_Mechanitor/Abilities/Militor_south</iconPath>
-        <abilityClass>VPE_MechanitorSTNL.Ability_SpawnMilitorSTNL</abilityClass>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<targetMode>Location</targetMode>
-		<castTime>180</castTime>
-		<goodwillImpact>0</goodwillImpact>
-		<needsTicking>true</needsTicking>
-		<range>12.9</range>
-		<durationTime>1</durationTime>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>2</level>
-				<order>2</order>
-				<psyfocusCost>0.18</psyfocusCost>
-				<entropyGain>24</entropyGain>
-				<prerequisites>
+	<defName>VPE_MilitorSummonSTNL</defName>
+	<label>Summon Militor</label>
+	<description>Hack a distant mechanoid factory to produce a Militor and skip it directly to you. Bandwidth Cost: 1</description>
+	<iconPath>UI_Mechanitor/Abilities/Militor_south</iconPath>
+	<abilityClass>VPE_MechanitorSTNL.Ability_SpawnMilitorSTNL</abilityClass>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<targetMode>Location</targetMode>
+	<castTime>180</castTime>
+	<goodwillImpact>0</goodwillImpact>
+	<needsTicking>true</needsTicking>
+	<range>12.9</range>
+	<durationTime>1</durationTime>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>2</level>
+			<order>2</order>
+			<psyfocusCost>0.18</psyfocusCost>
+			<entropyGain>24</entropyGain>
+			<prerequisites>
 				<li>VPE_MechlinkSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-<effecterDef>Skip_ExitNoDelay</effecterDef>
-<maintainForTicks>120</maintainForTicks>
-<scale>0.50</scale>
-</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>Skip_ExitNoDelay</effecterDef>
+			<maintainForTicks>120</maintainForTicks>
+			<scale>0.50</scale>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
-	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_StealthSTNL</defName>
-		<label>Engage Stealth</label>
-		<description>Psychically shroud the mechanoid in light-refracting archites, causing it to become virtually invisible. The process cannot be sustained for long though.</description>
-		<iconPath>UI_Mechanitor/Abilities/Ambush</iconPath>
-		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-		<goodwillImpact>0</goodwillImpact>
-		<castTime>30</castTime>
-		<durationTime>5800</durationTime>
-		    <durationTimeStatFactors>
-      <PsychicSensitivity>1</PsychicSensitivity>
-    </durationTimeStatFactors>
-    	<range>12.9</range>
-		<needsTicking>true</needsTicking>
-		<targetingParameters>
-			<canTargetLocations>False</canTargetLocations>
-			<canTargetSelf>False</canTargetSelf>
-			<canTargetAnimals>false</canTargetAnimals>
-			<canTargetPawns>True</canTargetPawns>
-			<canTargetHumans>False</canTargetHumans>
-			<canTargetMechs>True</canTargetMechs>
-		</targetingParameters>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>2</level>
-				<order>3</order>
-				<psyfocusCost>0.35</psyfocusCost>
-				<entropyGain>35</entropyGain>
-								<prerequisites>
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_StealthSTNL</defName>
+	<label>Engage Stealth</label>
+	<description>Psychically shroud the mechanoid in light-refracting archites, causing it to become virtually invisible. The process cannot be sustained for long though.</description>
+	<iconPath>UI_Mechanitor/Abilities/Ambush</iconPath>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<goodwillImpact>0</goodwillImpact>
+	<castTime>30</castTime>
+	<durationTime>5800</durationTime>
+	<durationTimeStatFactors>
+		<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
+	<range>12.9</range>
+	<needsTicking>true</needsTicking>
+	<targetingParameters>
+		<canTargetLocations>False</canTargetLocations>
+		<canTargetSelf>False</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>True</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>True</canTargetMechs>
+	</targetingParameters>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>2</level>
+			<order>3</order>
+			<psyfocusCost>0.35</psyfocusCost>
+			<entropyGain>35</entropyGain>
+			<prerequisites>
 				<li>VPE_MilitorSummonSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_Hediff">
-				<hediff>VPE_EngagedStealthMode</hediff>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-<effecterDef>Skip_ExitNoDelay</effecterDef>
-<maintainForTicks>120</maintainForTicks>
-<scale>1.25</scale>
-</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>VPE_EngagedStealthMode</hediff>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>Skip_ExitNoDelay</effecterDef>
+			<maintainForTicks>120</maintainForTicks>
+			<scale>1.25</scale>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_EngagedAmbushMode</defName>
@@ -242,114 +242,112 @@
 	</VEF.Abilities.AbilityDef>
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_OverdriveSTNL</defName>
-		<label>Optimize Mech</label>
-		<description>Psychically rewrite the code of the mechanoid's internal subroutines to remove unnecessary safety measures, allowing the mechanoid to move and fight faster.</description>
-		<iconPath>UI_Mechanitor/Abilities/AlphaOptimize</iconPath>
-		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-		<goodwillImpact>0</goodwillImpact>
-		<castTime>30</castTime>
-		<durationTime>12000</durationTime>
-    	<range>12.9</range>
-		<targetingParameters>
-			<canTargetLocations>False</canTargetLocations>
-			<canTargetSelf>False</canTargetSelf>
-			<canTargetAnimals>false</canTargetAnimals>
-			<canTargetPawns>True</canTargetPawns>
-			<canTargetHumans>False</canTargetHumans>
-			<canTargetMechs>True</canTargetMechs>
-		</targetingParameters>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>4</level>
-				<order>1</order>
-				<psyfocusCost>0.75</psyfocusCost>
-				<entropyGain>35</entropyGain>
-								<prerequisites>
+	<defName>VPE_OverdriveSTNL</defName>
+	<label>Optimize Mech</label>
+	<description>Psychically rewrite the code of the mechanoid's internal subroutines to remove unnecessary safety measures, allowing the mechanoid to move and fight faster.</description>
+	<iconPath>UI_Mechanitor/Abilities/AlphaOptimize</iconPath>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<goodwillImpact>0</goodwillImpact>
+	<castTime>30</castTime>
+	<durationTime>12000</durationTime>
+	<range>12.9</range>
+	<targetingParameters>
+		<canTargetLocations>False</canTargetLocations>
+		<canTargetSelf>False</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>True</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>True</canTargetMechs>
+	</targetingParameters>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0.75</psyfocusCost>
+			<entropyGain>35</entropyGain>
+			<prerequisites>
 				<li>VPE_ScorcherSummonSTNL</li>
 				<li>VPE_ScytherSummonSTNL</li>
 				<li>VPE_LancerSummonSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_Hediff">
-				<hediff>MechOptimizationSTNL</hediff>
-			</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>MechOptimizationSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
-	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_ReinforceSTNL</defName>
-		<label>Reinforce Mech</label>
-		<description>Psychically enchant the mechanoid's component with a low energy archite field that reduces the amount of damage taken upon being hit.</description>
-		<iconPath>UI_Mechanitor/Abilities/DeltaReinforce</iconPath>
-		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-		<goodwillImpact>0</goodwillImpact>
-		<castTime>30</castTime>
-    	<range>12.9</range>
-		<targetingParameters>
-			<canTargetLocations>False</canTargetLocations>
-			<canTargetSelf>False</canTargetSelf>
-			<canTargetAnimals>false</canTargetAnimals>
-			<canTargetPawns>True</canTargetPawns>
-			<canTargetHumans>False</canTargetHumans>
-			<canTargetMechs>True</canTargetMechs>
-		</targetingParameters>
-		<castSound>VPE_MeteorShower_Cast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>4</level>
-				<order>2</order>
-				<psyfocusCost>0.75</psyfocusCost>
-				<entropyGain>35</entropyGain>
-								<prerequisites>
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_ReinforceSTNL</defName>
+	<label>Reinforce Mech</label>
+	<description>Psychically enchant the mechanoid's component with a low energy archite field that reduces the amount of damage taken upon being hit.</description>
+	<iconPath>UI_Mechanitor/Abilities/DeltaReinforce</iconPath>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<goodwillImpact>0</goodwillImpact>
+	<castTime>30</castTime>
+	<range>12.9</range>
+	<targetingParameters>
+		<canTargetLocations>False</canTargetLocations>
+		<canTargetSelf>False</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>True</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>True</canTargetMechs>
+	</targetingParameters>
+	<castSound>VPE_MeteorShower_Cast</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>4</level>
+			<order>2</order>
+			<psyfocusCost>0.75</psyfocusCost>
+			<entropyGain>35</entropyGain>
+			<prerequisites>
 				<li>VPE_OverdriveSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_Hediff">
-				<hediff>MechCombatUpgradeSTNL</hediff>
-			</li>
-			
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>MechCombatUpgradeSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
-		<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_ShutDownSTNL</defName>
-		<label>Epsilon Shutdown</label>
-		<description>Psychically hack a mechanoid to shut it off.</description>
-		<iconPath>UI_Mechanitor/Abilities/EpsilonHack</iconPath>
-		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-		<goodwillImpact>0</goodwillImpact>
-		<castTime>30</castTime>
-    	<range>12.9</range>
-		<targetingParameters>
-			<canTargetLocations>False</canTargetLocations>
-			<canTargetSelf>False</canTargetSelf>
-			<canTargetAnimals>false</canTargetAnimals>
-			<canTargetPawns>True</canTargetPawns>
-			<canTargetHumans>False</canTargetHumans>
-			<canTargetMechs>True</canTargetMechs>
-		</targetingParameters>
-		<castSound>VPE_MeteorShower_Cast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>4</level>
-				<order>3</order>
-				<psyfocusCost>0.75</psyfocusCost>
-				<entropyGain>35</entropyGain>
-								<prerequisites>
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_ShutDownSTNL</defName>
+	<label>Epsilon Shutdown</label>
+	<description>Psychically hack a mechanoid to shut it off.</description>
+	<iconPath>UI_Mechanitor/Abilities/EpsilonHack</iconPath>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<goodwillImpact>0</goodwillImpact>
+	<castTime>30</castTime>
+	<range>12.9</range>
+	<targetingParameters>
+		<canTargetLocations>False</canTargetLocations>
+		<canTargetSelf>False</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>True</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>True</canTargetMechs>
+	</targetingParameters>
+	<castSound>VPE_MeteorShower_Cast</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>4</level>
+			<order>3</order>
+			<psyfocusCost>0.75</psyfocusCost>
+			<entropyGain>35</entropyGain>
+			<prerequisites>
 				<li>VPE_ReinforceSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_Hediff">
-				<hediff>EpsilonShutdownSTNL</hediff>
-			</li>
-			
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>EpsilonShutdownSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_TesseronSummonSTNL</defName>
@@ -415,69 +413,69 @@
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
 	
-	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_CentipedeSummonSTNL</defName>
-		<label>Summon Centipede (Blaster)</label>
-		<description>Hack a distant mechanoid factory to produce a Centipede blaster and skip it directly to you. Bandwidth Cost: 4</description>
-		<iconPath>UI_Mechanitor/Abilities/Centipede</iconPath>
-        <abilityClass>VPE_MechanitorSTNL.Ability_SpawnCentipedeBlasterSTNL</abilityClass>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<targetMode>Location</targetMode>
-		<castTime>180</castTime>
-		<goodwillImpact>0</goodwillImpact>
-		<needsTicking>true</needsTicking>
-		<range>12.9</range>
-		<durationTime>1</durationTime>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>5</level>
-				<order>3</order>
-				<psyfocusCost>0.50</psyfocusCost>
-				<entropyGain>24</entropyGain>
-				<prerequisites>
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_CentipedeSummonSTNL</defName>
+	<label>Summon Centipede (Blaster)</label>
+	<description>Hack a distant mechanoid factory to produce a Centipede blaster and skip it directly to you. Bandwidth Cost: 4</description>
+	<iconPath>UI_Mechanitor/Abilities/Centipede</iconPath>
+	<abilityClass>VPE_MechanitorSTNL.Ability_SpawnCentipedeBlasterSTNL</abilityClass>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<targetMode>Location</targetMode>
+	<castTime>180</castTime>
+	<goodwillImpact>0</goodwillImpact>
+	<needsTicking>true</needsTicking>
+	<range>12.9</range>
+	<durationTime>1</durationTime>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>5</level>
+			<order>3</order>
+			<psyfocusCost>0.50</psyfocusCost>
+			<entropyGain>24</entropyGain>
+			<prerequisites>
 				<li>VPE_PikemanSummonSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-<effecterDef>Skip_ExitNoDelay</effecterDef>
-<maintainForTicks>120</maintainForTicks>
-<scale>1.25</scale>
-</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>Skip_ExitNoDelay</effecterDef>
+			<maintainForTicks>120</maintainForTicks>
+			<scale>1.25</scale>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
-	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_DiabolusSummonSTNL</defName>
-		<label>Summon Diabolus</label>
-		<description>Hack a distant mechanoid ship to produce a Diabolus and skip it directly to you. Bandwidth Cost: 5</description>
-		<iconPath>UI_Mechanitor/Abilities/Diabolus</iconPath>
-        <abilityClass>VPE_MechanitorSTNL.Ability_SpawnDiabolusSTNL</abilityClass>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<targetMode>Location</targetMode>
-		<castTime>300</castTime>
-		<goodwillImpact>0</goodwillImpact>
-		<needsTicking>true</needsTicking>
-		<range>12.9</range>
-		<durationTime>1</durationTime>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>6</level>
-				<order>1</order>
-				<psyfocusCost>0.99</psyfocusCost>
-				<entropyGain>75</entropyGain>
-				<prerequisites>
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_DiabolusSummonSTNL</defName>
+	<label>Summon Diabolus</label>
+	<description>Hack a distant mechanoid ship to produce a Diabolus and skip it directly to you. Bandwidth Cost: 5</description>
+	<iconPath>UI_Mechanitor/Abilities/Diabolus</iconPath>
+	<abilityClass>VPE_MechanitorSTNL.Ability_SpawnDiabolusSTNL</abilityClass>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<targetMode>Location</targetMode>
+	<castTime>300</castTime>
+	<goodwillImpact>0</goodwillImpact>
+	<needsTicking>true</needsTicking>
+	<range>12.9</range>
+	<durationTime>1</durationTime>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>6</level>
+			<order>1</order>
+			<psyfocusCost>0.90</psyfocusCost>
+			<entropyGain>75</entropyGain>
+			<prerequisites>
 				<li>VPE_CentipedeSummonSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-<effecterDef>VPE_Skip_ExitNoDelayRed</effecterDef>
-<maintainForTicks>2000</maintainForTicks>
-<scale>2</scale>
-</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Skip_ExitNoDelayRed</effecterDef>
+			<maintainForTicks>2000</maintainForTicks>
+			<scale>2</scale>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_WarqueenSummonSTNL</defName>
@@ -497,7 +495,7 @@
 				<path>VPE_MechanitorSTNL</path>
 				<level>6</level>
 				<order>2</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>75</entropyGain>
 				<prerequisites>
 				<li>VPE_DiabolusSummonSTNL</li>
@@ -529,7 +527,7 @@
 				<path>VPE_MechanitorSTNL</path>
 				<level>6</level>
 				<order>3</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>150</entropyGain>
 				<prerequisites>
 				<li>VPE_WarqueenSummonSTNL</li>
@@ -561,7 +559,7 @@
 <path>VPE_MechanitorSTNL</path>
 <level>7</level>
 <order>1</order>
-<psyfocusCost>0.99</psyfocusCost>
+<psyfocusCost>0.90</psyfocusCost>
 <entropyGain>200</entropyGain>
 <prerequisites>
 <li>VPE_DiabolusSummonSTNL</li>
@@ -596,7 +594,7 @@
 <path>VPE_MechanitorSTNL</path>
 <level>7</level>
 <order>2</order>
-<psyfocusCost>0.99</psyfocusCost>
+<psyfocusCost>0.90</psyfocusCost>
 <entropyGain>200</entropyGain>
 <prerequisites>
 <li>VPE_WarqueenSummonSTNL</li>
@@ -631,7 +629,7 @@
 <path>VPE_MechanitorSTNL</path>
 <level>7</level>
 <order>3</order>
-<psyfocusCost>0.99</psyfocusCost>
+<psyfocusCost>0.90</psyfocusCost>
 <entropyGain>200</entropyGain>
 <prerequisites>
 <li>VPE_ApocritonSummonSTNL</li>
@@ -649,32 +647,32 @@
 </VEF.Abilities.AbilityDef>
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>VPE_ApoSTNL</defName>
-		<label>Mechanitor Precept: Apocritia</label>
-		<description>Uses the power of the psylink to upgrade the mechlink for a duration of 24hrs, granting you the ability to resurrect any mechanoid during that time.</description>
-		<iconPath>UI_Mechanitor/Abilities/Apocritia</iconPath>
-		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-		<goodwillImpact>0</goodwillImpact>
-		<castTime>30</castTime>
-		<durationTime>0</durationTime>
-		<targetMode>Self</targetMode>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorSTNL</path>
-				<level>8</level>
-				<order>3</order>
-				<psyfocusCost>0.75</psyfocusCost>
-				<entropyGain>35</entropyGain>
-<prerequisites>
-<li>VPE_MortarTurretSTNL</li>
-</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_Hediff">
-				<hediff>Apocriton-linkSTNL</hediff>
-			</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+	<defName>VPE_ApoSTNL</defName>
+	<label>Mechanitor Precept: Apocritia</label>
+	<description>Uses the power of the psylink to upgrade the mechlink for a duration of 24hrs, granting you the ability to resurrect any mechanoid during that time.</description>
+	<iconPath>UI_Mechanitor/Abilities/Apocritia</iconPath>
+	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<goodwillImpact>0</goodwillImpact>
+	<castTime>30</castTime>
+	<durationTime>0</durationTime>
+	<targetMode>Self</targetMode>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorSTNL</path>
+			<level>8</level>
+			<order>3</order>
+			<psyfocusCost>0.75</psyfocusCost>
+			<entropyGain>35</entropyGain>
+			<prerequisites>
+				<li>VPE_MortarTurretSTNL</li>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_Hediff">
+			<hediff>Apocriton-linkSTNL</hediff>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_MechstripSTNL</defName>
@@ -724,7 +722,7 @@
 			<path>VPE_MechanitorSTNL</path>
 			<level>8</level>
 			<order>1</order>
-			<psyfocusCost>0.99</psyfocusCost>
+			<psyfocusCost>0.90</psyfocusCost>
 			<entropyGain>35</entropyGain>
 			<prerequisites>
 				<li>VPE_FireTurretSTNL</li>
@@ -878,7 +876,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>5</level>
 				<order>3</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.80</psyfocusCost>
 				<entropyGain>150</entropyGain>
 			</li>
 			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
@@ -907,7 +905,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>3</level>
 				<order>2</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.80</psyfocusCost>
 				<entropyGain>150</entropyGain>
 			</li>
 			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
@@ -936,7 +934,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>3</level>
 				<order>1</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.80</psyfocusCost>
 				<entropyGain>150</entropyGain>
 			</li>
 			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
@@ -965,7 +963,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>3</level>
 				<order>1</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.80</psyfocusCost>
 				<entropyGain>150</entropyGain>
 			</li>
 			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
@@ -1186,7 +1184,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>4</level>
 				<order>2</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>150</entropyGain>
 				<prerequisites>
 				<li>VPE_AgrihandSummonSTNL</li>
@@ -1218,7 +1216,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>2</level>
 				<order>1</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>150</entropyGain>
 				<prerequisites>
 				<li>VPE_CleansweeperSummonSTNL</li>
@@ -1250,7 +1248,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>2</level>
 				<order>2</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>150</entropyGain>
 				<prerequisites>
 				<li>VPE_ConstructoidSummonSTNL</li>
@@ -1282,7 +1280,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>2</level>
 				<order>3</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>150</entropyGain>
 				<prerequisites>
 				<li>VPE_LifterSummonSTNL</li>
@@ -1314,7 +1312,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>4</level>
 				<order>1</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>150</entropyGain>
 				<prerequisites>
 				<li>VPE_TunnelerSummonSTNL</li>
@@ -1328,37 +1326,37 @@
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
 	
-	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Sobb.AdvancedMechanoids">
-		<defName>VPE_AdvFabricorSummonSTNL</defName>
-		<label>Summon Advanced Fabricor</label>
-		<description>Hack a distant mechanoid factory to produce an Advanced Fabricor and skip it directly to you. Bandwidth Cost: 2</description>
-		<iconPath>Things/Pawn/Mechanoid/Advanced_Fabricor_east</iconPath>
-        <abilityClass>VPE_MechanitorSTNL.Ability_SummonAdvFabricor</abilityClass>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<targetMode>Location</targetMode>
-		<castTime>360</castTime>
-		<goodwillImpact>0</goodwillImpact>
-		<needsTicking>true</needsTicking>
-		<range>12.9</range>
-		<durationTime>1</durationTime>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_MechanitorWorkerSTNL</path>
-				<level>4</level>
-				<order>2</order>
-				<psyfocusCost>0.99</psyfocusCost>
-				<entropyGain>150</entropyGain>
-				<prerequisites>
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Sobb.AdvancedMechanoids">
+	<defName>VPE_AdvFabricorSummonSTNL</defName>
+	<label>Summon Advanced Fabricor</label>
+	<description>Hack a distant mechanoid factory to produce an Advanced Fabricor and skip it directly to you. Bandwidth Cost: 2</description>
+	<iconPath>Things/Pawn/Mechanoid/Advanced_Fabricor_east</iconPath>
+	<abilityClass>VPE_MechanitorSTNL.Ability_SummonAdvFabricor</abilityClass>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<targetMode>Location</targetMode>
+	<castTime>360</castTime>
+	<goodwillImpact>0</goodwillImpact>
+	<needsTicking>true</needsTicking>
+	<range>12.9</range>
+	<durationTime>1</durationTime>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_MechanitorWorkerSTNL</path>
+			<level>4</level>
+			<order>2</order>
+			<psyfocusCost>0.90</psyfocusCost>
+			<entropyGain>150</entropyGain>
+			<prerequisites>
 				<li>VPE_FabricorSummonSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-<effecterDef>VPE_Skip_ExitNoDelayRed</effecterDef>
-<maintainForTicks>120</maintainForTicks>
-<scale>1</scale>
-</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>VPE_Skip_ExitNoDelayRed</effecterDef>
+			<maintainForTicks>120</maintainForTicks>
+			<scale>1</scale>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Sobb.AdvancedMechanoids">
 		<defName>VPE_AdvParamedicSummonSTNL</defName>
@@ -1378,7 +1376,7 @@
 				<path>VPE_MechanitorWorkerSTNL</path>
 				<level>6</level>
 				<order>3</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>150</entropyGain>
 				<prerequisites>
 				<li>VPE_ParamedicSummonSTNL</li>
@@ -1720,39 +1718,39 @@
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
 	
-	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Aoba.DeadManSwitch.Core">
-		<defName>VPE_DMS_Mech_GeckoSTNL</defName>
-		<label>Summon Gecko</label>
-		<description>Hack a distant automatroid factory to produce a Gecko and skip it directly to you. Bandwidth Cost: 4</description>
-		<iconPath>Things/Automatroid/Gecko_east</iconPath>
-        <abilityClass>VPE_MechanitorSTNL.Ability_SummonDMS_Mech_Gecko</abilityClass>
-		<castSound>Psycast_Skip_Pulse</castSound>
-		<targetMode>Location</targetMode>
-		<castTime>180</castTime>
-		<goodwillImpact>0</goodwillImpact>
-		<needsTicking>true</needsTicking>
-		<range>12.9</range>
-		<durationTime>1</durationTime>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>VPE_DMSMechanitorSTNL</path>
-				<level>4</level>
-				<order>1</order>
-				<psyfocusCost>0.49</psyfocusCost>
-				<entropyGain>24</entropyGain>
-				<prerequisites>
+<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Aoba.DeadManSwitch.Core">
+	<defName>VPE_DMS_Mech_GeckoSTNL</defName>
+	<label>Summon Gecko</label>
+	<description>Hack a distant automatroid factory to produce a Gecko and skip it directly to you. Bandwidth Cost: 4</description>
+	<iconPath>Things/Automatroid/Gecko_east</iconPath>
+	<abilityClass>VPE_MechanitorSTNL.Ability_SummonDMS_Mech_Gecko</abilityClass>
+	<castSound>Psycast_Skip_Pulse</castSound>
+	<targetMode>Location</targetMode>
+	<castTime>180</castTime>
+	<goodwillImpact>0</goodwillImpact>
+	<needsTicking>true</needsTicking>
+	<range>12.9</range>
+	<durationTime>1</durationTime>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+			<path>VPE_DMSMechanitorSTNL</path>
+			<level>4</level>
+			<order>1</order>
+			<psyfocusCost>0.49</psyfocusCost>
+			<entropyGain>24</entropyGain>
+			<prerequisites>
 				<li>VPE_DMSGeocheloneSummonSTNL</li>
 				<li>VPE_DMSKilldozerSummonSTNL</li>
 				<li>VPE_DMS_Mech_CarettaSTNL</li>
-				</prerequisites>
-			</li>
-			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-<effecterDef>Skip_ExitNoDelay</effecterDef>
-<maintainForTicks>120</maintainForTicks>
-<scale>2</scale>
-</li>
-		</modExtensions>
-	</VEF.Abilities.AbilityDef>
+			</prerequisites>
+		</li>
+		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+			<effecterDef>Skip_ExitNoDelay</effecterDef>
+			<maintainForTicks>120</maintainForTicks>
+			<scale>2</scale>
+		</li>
+	</modExtensions>
+</VEF.Abilities.AbilityDef>
 	
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Aoba.DeadManSwitch.Core">
 		<defName>VPE_DMS_Mech_TarbosaurusSTNL</defName>
@@ -1772,7 +1770,7 @@
 				<path>VPE_DMSMechanitorSTNL</path>
 				<level>5</level>
 				<order>1</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>24</entropyGain>
 				<prerequisites>
 				<li>VPE_DMS_Mech_IguanaSTNL</li>
@@ -2037,7 +2035,7 @@
 				<path>VPE_AlphaMechanitorSTNL</path>
 				<level>6</level>
 				<order>2</order>
-				<psyfocusCost>0.99</psyfocusCost>
+				<psyfocusCost>0.90</psyfocusCost>
 				<entropyGain>75</entropyGain>
 				<prerequisites>
 				<li>VPE_AM_SiegebreakerSTNL</li>
@@ -2980,14 +2978,6 @@
 		<canTargetHumans>False</canTargetHumans>
 		<canTargetMechs>True</canTargetMechs>
 	</targetingParameters>
-	<!-- <targetingParametersForAoE> -->
-		<!-- <canTargetLocations>False</canTargetLocations> -->
-		<!-- <canTargetSelf>False</canTargetSelf> -->
-		<!-- <canTargetAnimals>False</canTargetAnimals> -->
-		<!-- <canTargetPawns>True</canTargetPawns> -->
-		<!-- <canTargetHumans>False</canTargetHumans> -->
-		<!-- <canTargetMechs>True</canTargetMechs> -->
-	<!-- </targetingParametersForAoE> -->
 	<castSound>Psycast_Skip_Pulse</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
