@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
     <VanillaPsycastsExpanded.PsycasterPathDef>
-    <defName>VPE_MechanitorSTNL</defName>
+    <defName>VPE_MechanitorV2STNL</defName>
     <label>Mechanitor</label>
     <description>Manifest and reinforce your own army of mechanoids.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
@@ -11,6 +12,20 @@
 	    <lockedReason>Mech-Mind only</lockedReason>
     <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
   </VanillaPsycastsExpanded.PsycasterPathDef>
+
+<!-- Bloat to remove -->
+
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+    <defName>VPE_MechanitorSTNL</defName>
+    <label>Mechanitor</label>
+    <description>Manifest and reinforce your own army of mechanoids.</description>
+    <background>UI_Mechanitor/Tree/Mechtreebase</background>
+    <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
+    <tab>Cut</tab>
+    <tooltip>Manifest and reinforce your own army of mechanoids.</tooltip>
+	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
+		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
   
   <VanillaPsycastsExpanded.PsycasterPathDef>
     <defName>VPE_MechanitorWorkerSTNL</defName>
@@ -18,10 +33,10 @@
     <description>Conjure a swarm of workers for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Misc</tab>
+    <tab>Cut</tab>
     <tooltip>Conjure a swarm of workers for your colony.</tooltip>
-	    <lockedReason>Mech-Mind only</lockedReason>
-    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
+		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
   </VanillaPsycastsExpanded.PsycasterPathDef>
   
   <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="Aoba.DeadManSwitch.Core">
@@ -30,10 +45,10 @@
     <description>Conjure a swarm of workers for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Misc</tab>
+    <tab>Cut</tab>
     <tooltip>Conjure a swarm of workers for your colony.</tooltip>
-	    <lockedReason>Mech-Mind only</lockedReason>
-    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
+		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
   </VanillaPsycastsExpanded.PsycasterPathDef>
   
   <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="sarg.alphamechs">
@@ -42,10 +57,10 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Misc</tab>
+    <tab>Cut</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
-	    <lockedReason>Mech-Mind only</lockedReason>
-    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
+		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
   </VanillaPsycastsExpanded.PsycasterPathDef>
   
   <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="Mlie.ReinforcedMechanoid2">
@@ -54,10 +69,10 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Misc</tab>
+    <tab>Cut</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
-	    <lockedReason>Mech-Mind only</lockedReason>
-    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
+		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
   </VanillaPsycastsExpanded.PsycasterPathDef>
   
     <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="Ancot.MiliraRace">
@@ -66,10 +81,10 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Misc</tab>
+    <tab>Cut</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
-	    <lockedReason>Mech-Mind only</lockedReason>
-    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
+		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
   </VanillaPsycastsExpanded.PsycasterPathDef>
   
     <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="Nyar.NCLvsTW">
@@ -78,10 +93,10 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Misc</tab>
+    <tab>Cut</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
-	    <lockedReason>Mech-Mind only</lockedReason>
-    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
+		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
   </VanillaPsycastsExpanded.PsycasterPathDef>
   
     <VanillaPsycastsExpanded.PsycasterPathDef MayRequire="src.Core.markeazzyh">
@@ -90,10 +105,10 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Misc</tab>
+    <tab>Cut</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
-	    <lockedReason>Mech-Mind only</lockedReason>
-    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
+	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
+		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
   </VanillaPsycastsExpanded.PsycasterPathDef>
   
 </Defs>

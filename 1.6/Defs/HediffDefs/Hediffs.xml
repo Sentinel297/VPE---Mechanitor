@@ -97,95 +97,95 @@
 </HediffDef>
 	
 <HediffDef>
-      <defName>AlphaMind-linkSTNL</defName>
-      <label>Alpha Mech-Mind</label>
-      <description>The final level of synergy between the psylink and mechlink, granting you additional bandwidth and control groups.</description>
-      <descriptionShort>The final level of synergy between the psylink and mechlink, granting you additional bandwidth and control groups.</descriptionShort>
-      <isBad>false</isBad>
-	  <minSeverity>0.01</minSeverity>
-	  <maxSeverity>1</maxSeverity>
- <stages>
-<li>
-<label>Level 1</label>
-<minSeverity>0.11</minSeverity>
-<statOffsets>
-<MechBandwidth>10</MechBandwidth>
-<MechControlGroups>1</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>0.21</minSeverity>
-<label>Level 2</label>
-<statOffsets>
-<MechBandwidth>20</MechBandwidth>
-<MechControlGroups>2</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>0.31</minSeverity>
-<label>Level 3</label>
-<statOffsets>
-<MechBandwidth>30</MechBandwidth>
-<MechControlGroups>3</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>0.41</minSeverity>
-<label>Level 4</label>
-<statOffsets>
-<MechBandwidth>40</MechBandwidth>
-<MechControlGroups>4</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>0.51</minSeverity>
-<label>Level 5</label>
-<statOffsets>
-<MechBandwidth>50</MechBandwidth>
-<MechControlGroups>5</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>0.65</minSeverity>
-<label>Level 6</label>
-<statOffsets>
-<MechBandwidth>60</MechBandwidth>
-<MechControlGroups>6</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>0.75</minSeverity>
-<label>Level 7</label>
-<statOffsets>
-<MechBandwidth>70</MechBandwidth>
-<MechControlGroups>7</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>0.85</minSeverity>
-<label>Level 8</label>
-<statOffsets>
-<MechBandwidth>80</MechBandwidth>
-<MechControlGroups>8</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>0.90</minSeverity>
-<label>Level 9</label>
-<statOffsets>
-<MechBandwidth>90</MechBandwidth>
-<MechControlGroups>9</MechControlGroups>
-</statOffsets>
-</li>
-<li>
-<minSeverity>1</minSeverity>
-<label>Level 10</label>
-<statOffsets>
-<MechBandwidth>100</MechBandwidth>
-<MechControlGroups>10</MechControlGroups>
-</statOffsets>
-</li>
-</stages>
+	<defName>AlphaMind-linkSTNL</defName>
+	<label>Alpha Mech-Mind</label>
+	<description>The final level of synergy between the psylink and mechlink, granting you additional bandwidth and control groups.</description>
+	<descriptionShort>The final level of synergy between the psylink and mechlink, granting you additional bandwidth and control groups.</descriptionShort>
+	<isBad>false</isBad>
+	<minSeverity>0.01</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<stages>
+		<li>
+			<label>Level 1</label>
+			<minSeverity>0.11</minSeverity>
+			<statOffsets>
+				<MechBandwidth>10</MechBandwidth>
+				<MechControlGroups>1</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.21</minSeverity>
+			<label>Level 2</label>
+			<statOffsets>
+				<MechBandwidth>20</MechBandwidth>
+				<MechControlGroups>2</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.31</minSeverity>
+			<label>Level 3</label>
+			<statOffsets>
+				<MechBandwidth>30</MechBandwidth>
+				<MechControlGroups>3</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.41</minSeverity>
+			<label>Level 4</label>
+			<statOffsets>
+				<MechBandwidth>40</MechBandwidth>
+				<MechControlGroups>4</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.51</minSeverity>
+			<label>Level 5</label>
+			<statOffsets>
+				<MechBandwidth>50</MechBandwidth>
+				<MechControlGroups>5</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.65</minSeverity>
+			<label>Level 6</label>
+			<statOffsets>
+				<MechBandwidth>60</MechBandwidth>
+				<MechControlGroups>6</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.75</minSeverity>
+			<label>Level 7</label>
+			<statOffsets>
+				<MechBandwidth>70</MechBandwidth>
+				<MechControlGroups>7</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.85</minSeverity>
+			<label>Level 8</label>
+			<statOffsets>
+				<MechBandwidth>80</MechBandwidth>
+				<MechControlGroups>8</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.90</minSeverity>
+			<label>Level 9</label>
+			<statOffsets>
+				<MechBandwidth>90</MechBandwidth>
+				<MechControlGroups>9</MechControlGroups>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>1</minSeverity>
+			<label>Level 10</label>
+			<statOffsets>
+				<MechBandwidth>100</MechBandwidth>
+				<MechControlGroups>10</MechControlGroups>
+			</statOffsets>
+		</li>
+	</stages>
 </HediffDef>
 
 <HediffDef>
