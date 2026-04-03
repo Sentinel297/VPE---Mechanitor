@@ -21,7 +21,7 @@
     <description>Manifest and reinforce your own army of mechanoids.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Cut</tab>
+    <tab>Discontinued</tab>
     <tooltip>Manifest and reinforce your own army of mechanoids.</tooltip>
 	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
 		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
@@ -33,7 +33,7 @@
     <description>Conjure a swarm of workers for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Cut</tab>
+    <tab>Discontinued</tab>
     <tooltip>Conjure a swarm of workers for your colony.</tooltip>
 	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
 		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
@@ -45,7 +45,7 @@
     <description>Conjure a swarm of workers for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Cut</tab>
+    <tab>Discontinued</tab>
     <tooltip>Conjure a swarm of workers for your colony.</tooltip>
 	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
 		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
@@ -57,7 +57,7 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Cut</tab>
+    <tab>Discontinued</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
 	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
 		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
@@ -69,7 +69,7 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Cut</tab>
+    <tab>Discontinued</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
 	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
 		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
@@ -81,7 +81,7 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Cut</tab>
+    <tab>Discontinued</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
 	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
 		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
@@ -93,7 +93,7 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Cut</tab>
+    <tab>Discontinued</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
 	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
 		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
@@ -105,7 +105,7 @@
     <description>Conjure a swarm of mechanoids for your colony.</description>
     <background>UI_Mechanitor/Tree/Mechtreebase</background>
     <altBackground>UI_Mechanitor/Tree/Mechtreebase</altBackground>
-    <tab>Cut</tab>
+    <tab>Discontinued</tab>
     <tooltip>Conjure a swarm of mechanoids for your colony.</tooltip>
 	    <lockedReason>Removed content (Mech-Mind)</lockedReason>
 		    <requiredFocus>VPE_MechanitorFociSTNL</requiredFocus>
