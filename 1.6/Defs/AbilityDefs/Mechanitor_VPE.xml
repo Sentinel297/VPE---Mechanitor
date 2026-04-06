@@ -1902,49 +1902,6 @@
 </VEF.Abilities.AbilityDef>
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Ancot.MiliraRace">
-	<defName>VPE_MilianChargeSTNL</defName>
-	<label>Milian Charge</label>
-	<description>Raises the consciousness and movement speed of nearby mechs.</description>
-	<iconPath>UI_Mechanitor/Abilities/MilianCharge</iconPath>
-	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-	<goodwillImpact>0</goodwillImpact>
-	<castTime>30</castTime>
-	<durationTime>30000</durationTime>
-	<targetMode>Self</targetMode>
-	<hasAoE>True</hasAoE>
-	<radius>3.9</radius>
-	<targetingParameters>
-		<canTargetLocations>False</canTargetLocations>
-		<canTargetSelf>True</canTargetSelf>
-		<canTargetAnimals>False</canTargetAnimals>
-		<canTargetPawns>False</canTargetPawns>
-		<canTargetHumans>False</canTargetHumans>
-		<canTargetMechs>False</canTargetMechs>
-	</targetingParameters>
-	<targetingParametersForAoE>
-		<canTargetLocations>False</canTargetLocations>
-		<canTargetSelf>False</canTargetSelf>
-		<canTargetAnimals>False</canTargetAnimals>
-		<canTargetPawns>True</canTargetPawns>
-		<canTargetHumans>False</canTargetHumans>
-		<canTargetMechs>True</canTargetMechs>
-	</targetingParametersForAoE>
-	<castSound>Psycast_Skip_Pulse</castSound>
-	<modExtensions>
-		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-			<path>VPE_MilianMechanitorSTNL</path>
-			<level>2</level>
-			<order>1</order>
-			<psyfocusCost>0.15</psyfocusCost>
-			<entropyGain>35</entropyGain>
-		</li>
-		<li Class="VEF.Abilities.AbilityExtension_Hediff">
-			<hediff>MilianChargeSTNL</hediff>
-		</li>
-	</modExtensions>
-</VEF.Abilities.AbilityDef>
-
-<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Ancot.MiliraRace">
 	<defName>VPE_SummonKnightIISTNL</defName>
 	<label>Summon Knight II</label>
 	<description>Hack a distant mechanoid factory to produce a Knight II unit and skip it directly to you. Bandwidth Cost: 5</description>
@@ -2422,50 +2379,6 @@
 			</pawnKinds>
 			<count>1</count>
 			<makeOverseer>true</makeOverseer>
-		</li>
-	</modExtensions>
-</VEF.Abilities.AbilityDef>
-
-<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="Ancot.MiliraRace">
-	<defName>VPE_MililinkSTNL</defName>
-	<label>Mi-Link</label>
-	<description>Link yourself to the target mechanoid, both parties will gain various bonuses.\n\nCaster: Halved psyfocus and heat cost from psycasts\n\nMechanoid: Doubled consciousness and attack speed.</description>
-	<iconPath>UI_Mechanitor/Abilities/Milink</iconPath>
-	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-	<goodwillImpact>0</goodwillImpact>
-	<range>20.9</range>
-	<castTime>30</castTime>
-	<durationTime>30000</durationTime>
-	<targetMode>Pawn</targetMode>
-	<hasAoE>False</hasAoE>
-	<!-- <radius>3.9</radius> -->
-	<targetingParameters>
-		<canTargetLocations>False</canTargetLocations>
-		<canTargetSelf>False</canTargetSelf>
-		<canTargetAnimals>False</canTargetAnimals>
-		<canTargetPawns>True</canTargetPawns>
-		<canTargetHumans>False</canTargetHumans>
-		<canTargetMechs>True</canTargetMechs>
-	</targetingParameters>
-	<castSound>Psycast_Skip_Pulse</castSound>
-	<modExtensions>
-		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-			<path>VPE_MilianMechanitorSTNL</path>
-			<level>8</level>
-			<order>1</order>
-			<psyfocusCost>0.10</psyfocusCost>
-			<entropyGain>10</entropyGain>
-			<prerequisites>
-			<li>VPE_MilianChargeSTNL</li>
-			</prerequisites>
-		</li>
-		<li Class="VEF.Abilities.AbilityExtension_ExtraHediffs">
-			<onCaster>
-				<li>MilinkHumanSTNL</li>
-			</onCaster>
-			<onTarget>
-				<li>MilinkMechSTNL</li>
-			</onTarget>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>

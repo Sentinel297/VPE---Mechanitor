@@ -268,47 +268,9 @@
 </stages>
 </HediffDef>
 
-<!-- Milira -->
-
-<HediffDef>
-	<defName>MilianChargeSTNL</defName>
-	<label>Milian Charge</label>
-	<description>This mechanoid is being enhanced by a Milian Mechanitor.</description>
-	<hediffClass>HediffWithComps</hediffClass>
-	<initialSeverity>1</initialSeverity>
-	<minSeverity>0</minSeverity>
-	<maxSeverity>1</maxSeverity>
-	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
-	<makesSickThought>False</makesSickThought>
-	<scenarioCanAdd>false</scenarioCanAdd>
-	<isBad>false</isBad>
-	<everCurableByItem>false</everCurableByItem>
-	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
-	<stages>
-		<li>
-			<capMods>
-				<li>
-					<capacity>Consciousness</capacity>
-					<offset>0.30</offset>
-				</li>
-				<li>
-					<capacity>Moving</capacity>
-					<offset>0.15</offset>
-				</li>
-			</capMods>
-		</li>
-	</stages>
-	<comps>
-		<li Class="HediffCompProperties_Disappears">
-			<disappearsAfterTicks>30000</disappearsAfterTicks>
-			<showRemainingTime>True</showRemainingTime>
-		</li>
-	</comps>
-</HediffDef>
-
 <HediffDef>
 	<defName>MilinkHumanSTNL</defName>
-	<label>Mi-Link</label>
+	<label>Mind-Link</label>
 	<description>The connection between a mechanoid and a person, halves psyfocus and neural heat cost of abilities by offloading part of the psychic strain onto the mechanoid.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -338,7 +300,7 @@
 
 <HediffDef>
 	<defName>MilinkMechSTNL</defName>
-	<label>Mi-Link</label>
+	<label>Mind-Link</label>
 	<description>The connection between a mechanoid and a person, this mechanoid is using the caster's psylink as a second subcore, effectively doubling its attack speed and consciousness.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -367,6 +329,44 @@
 	<comps>
 		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>30000</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+	</comps>
+</HediffDef>
+
+<!-- Milira -->
+
+<HediffDef>
+	<defName>MilianChargeSTNL</defName>
+	<label>Overdrive</label>
+	<description>This mechanoid is being enhanced by a Mechanitor, granting it increased movement speed and data processing for some time.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.30</offset>
+				</li>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>0.15</offset>
+				</li>
+			</capMods>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12500</disappearsAfterTicks>
 			<showRemainingTime>True</showRemainingTime>
 		</li>
 	</comps>
