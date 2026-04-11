@@ -815,7 +815,7 @@
 	<castTime>180</castTime>
 	<goodwillImpact>0</goodwillImpact>
 	<needsTicking>true</needsTicking>
-		<chance>0</chance>
+	<chance>0</chance>
 	<range>0</range>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
@@ -830,20 +830,48 @@
 		</li>
 		<li Class="VPE_MechanitorSTNL.ModExt_AbilityNetworkUpgrade">
 			<eligibleHediffs>
-				<li>MechOptimizationSTNL</li>
-				<li>MechCombatUpgradeSTNL</li>
-				<li>VPE_EngagedStealthMode</li>
-				<li>VPE_EngagedAmbushMode</li>
-				<li>BandwidthAssistSTNL</li>
-				<li>MilianChargeSTNL</li>
+				<li>
+					<hediffDef>MechOptimizationSTNL</hediffDef>
+				</li>
+				<li>
+					<hediffDef>MechCombatUpgradeSTNL</hediffDef>
+				</li>
+				<li>
+					<hediffDef>VPE_EngagedStealthMode</hediffDef>
+				</li>
+				<li>
+					<hediffDef>VPE_EngagedAmbushMode</hediffDef>
+				</li>
+				<li>
+					<hediffDef>BandwidthAssistSTNL</hediffDef>
+				</li>
+				<li>
+					<hediffDef>MilianChargeSTNL</hediffDef>
+				</li>
+				<li>
+					<hediffDef>MilinkMechSTNL</hediffDef>
+				</li>
 				<!-- Milira Stuff -->
-				<li MayRequire="Ancot.MiliraRace">MilinkMechSTNL</li>
-				<li MayRequire="Ancot.MiliraRace">Milian_ClassHediff_Pawn</li>
-				<li MayRequire="Ancot.MiliraRace">Milian_ClassHediff_Rook</li>
-				<li MayRequire="Ancot.MiliraRace">Milian_ClassHediff_Bishop</li>
-				<li MayRequire="Ancot.MiliraRace">Milian_ClassHediff_Knight</li>
+				<li MayRequire="Ancot.MiliraRace">
+					<hediffDef>Milian_ClassHediff_Pawn</hediffDef>
+					<bodyPartDef>Brain</bodyPartDef>
+				</li>
+				<li MayRequire="Ancot.MiliraRace">
+					<hediffDef>Milian_ClassHediff_Rook</hediffDef>
+					<bodyPartDef>Brain</bodyPartDef>
+				</li>
+				<li MayRequire="Ancot.MiliraRace">
+					<hediffDef>Milian_ClassHediff_Bishop</hediffDef>
+					<bodyPartDef>Brain</bodyPartDef>
+				</li>
+				<li MayRequire="Ancot.MiliraRace">
+					<hediffDef>Milian_ClassHediff_Knight</hediffDef>
+					<bodyPartDef>Brain</bodyPartDef>
+				</li>
 				<!-- My goat autoblink -->
-				<li MayRequire="rabiosus.autoblink">VPE_AutoBlinkSTNL</li>
+				<li MayRequire="rabiosus.autoblink">
+					<hediffDef>VPE_AutoBlinkSTNL</hediffDef>
+				</li>
 			</eligibleHediffs>
 		</li>
 		<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
