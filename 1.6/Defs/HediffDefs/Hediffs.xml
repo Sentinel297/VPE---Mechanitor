@@ -3,7 +3,7 @@
 <HediffDef>
 	<hediffClass>HediffWithComps</hediffClass>
       <defName>VPE_EngagedStealthMode</defName>
-     <label>Stealth Mode Engaged</label>
+     <label>Stealth mode engaged</label>
      <defaultLabelColor>(0.50, 0.50, 0.50)</defaultLabelColor>
       <description>Activated light-refracting nano archites acting as a temporary stealth field.</description>
       <descriptionShort>Activated light-refracting nano archites acting as a temporary stealth field.</descriptionShort>
@@ -25,7 +25,7 @@
 	<HediffDef>
 	<hediffClass>HediffWithComps</hediffClass>
       <defName>VPE_EngagedAmbushMode</defName>
-     <label>Ambush Precept Engaged</label>
+     <label>Ambush precept engaged</label>
      <defaultLabelColor>(0.50, 0.50, 0.50)</defaultLabelColor>
       <description>Activated light-refracting nano archites acting as a temporary stealth field, the effect will disappear upon attacking.</description>
       <descriptionShort>Activated light-refracting nano archites acting as a temporary stealth field, the effect will disappear upon attacking.</descriptionShort>
@@ -42,7 +42,7 @@
 
 <HediffDef>
       <defName>MechOptimizationSTNL</defName>
-      <label>Alpha Optimization</label>
+      <label>Alpha optimization</label>
       <description>Rewriten subroutines allow this mechanoid to perform better than factory units.</description>
       <descriptionShort>Rewriten subroutines allow this mechanoid to perform better than factory units.</descriptionShort>
       <isBad>false</isBad>
@@ -60,7 +60,7 @@
 
 <HediffDef>
       <defName>MechCombatUpgradeSTNL</defName>
-      <label>Delta Reinforcement</label>
+      <label>Delta reinforcement</label>
       <description>A low energy archite shield protects this mechanoid.</description>
       <descriptionShort>A low energy archite shield protects this mechanoid.</descriptionShort>
       <isBad>false</isBad>
@@ -75,7 +75,7 @@
 
 <HediffDef>
 	<defName>EpsilonShutdownSTNL</defName>
-	<label>Epsilon Shutdown</label>
+	<label>Epsilon shutdown</label>
 	<description>This mechanoid has been shut down by a psychic hack.</description>
 	<defaultLabelColor>(1.0, 0, 0)</defaultLabelColor>
 	<lethalSeverity>1</lethalSeverity>
@@ -98,7 +98,7 @@
 	
 <HediffDef>
 	<defName>AlphaMind-linkSTNL</defName>
-	<label>Alpha Mech-Mind</label>
+	<label>Alpha mech-mind</label>
 	<description>The final level of synergy between the psylink and mechlink, granting you additional bandwidth and control groups.</description>
 	<descriptionShort>The final level of synergy between the psylink and mechlink, granting you additional bandwidth and control groups.</descriptionShort>
 	<isBad>false</isBad>
@@ -191,7 +191,7 @@
 <HediffDef>
 <hediffClass>HediffWithComps</hediffClass>
       <defName>Apocriton-linkSTNL</defName>
-      <label>Mechanitor Precept: Apocritia</label>
+      <label>Mechanitor precept: apocritia</label>
       <description>This Mechlink upgrade is temporary, granting you 30 charges of the apocriton's resurrection ability to use on a dead mech.</description>
       <descriptionShort>This Mechlink upgrade is temporary, granting you 30 charges of the apocriton's resurrection ability to use on a dead mech.</descriptionShort>
       <isBad>false</isBad>
@@ -215,7 +215,7 @@
 
 <AbilityDef>
 	<defName>RaiseMechSTNL</defName>
-	<label>Project Mech-Lich</label>
+	<label>Project mech-lich</label>
 	<description>Resurrect a dead mechanoid by externally supercharging its self-repair processes. The mechanoid will come back with some but not all of its wounds healed, the process will place enemy mechanoids under your control. Cannot resurrect super heavy mechs.</description>
 	<iconPath>UI/Abilities/MechResurrection</iconPath>
 	<cooldownTicksRange>120</cooldownTicksRange>
@@ -255,7 +255,7 @@
 <HediffDef>
       <defName>BandwidthAssistSTNL</defName>
 	  <defaultLabelColor>(0, 1, 0)</defaultLabelColor>
-      <label>Assisted Control</label>
+      <label>Assisted control</label>
       <description>Optimized data transfer halves the bandwidth cost of this mechanoid.</description>
       <descriptionShort>Optimized data transfer halves the bandwidth cost of this mechanoid.</descriptionShort>
       <isBad>false</isBad>
@@ -270,7 +270,7 @@
 
 <HediffDef>
 	<defName>MilinkHumanSTNL</defName>
-	<label>Mind-Link</label>
+	<label>Mind-link</label>
 	<description>The connection between a mechanoid and a person, halves psyfocus and neural heat cost of abilities by offloading part of the psychic strain onto the mechanoid.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -300,7 +300,7 @@
 
 <HediffDef>
 	<defName>MilinkMechSTNL</defName>
-	<label>Mind-Link</label>
+	<label>Mind-link</label>
 	<description>The connection between a mechanoid and a person, this mechanoid is using the caster's psylink as a second subcore, effectively doubling its attack speed and consciousness.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -376,7 +376,7 @@
 
 <HediffDef MayRequire="rabiosus.autoblink">
 	<defName>VPE_AutoBlinkSTNL</defName>
-	<label>Precept: Blink</label>
+	<label>Precept: blink</label>
 	<description>This creature contains a miniature skipgate that can be used as a short-range teleportation method.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>

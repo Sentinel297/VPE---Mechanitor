@@ -2,7 +2,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_MechlinkSTNL</defName>
-	<label>Manifest Mechlink</label>
+	<label>Manifest mechlink</label>
 	<description>Uses the power of the psylink to create a mechlink inside the caster's own brain.</description>
 	<iconPath>Things/Pawn/Humanlike/Apparel/Mechlink</iconPath>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -28,7 +28,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Mechanitor_StructuralReconstruction_STNL</defName>
-	<label>Passive: Structural Reconstruction</label>
+	<label>Passive: Structural reconstruction</label>
 	<description>Passive Skill: Unlocking this skill will automatically apply its effects:\n\nAllows this Mechanitor's mechanoids to passively recover from light physical damage.\n\nMechanoids who have lost their weapon will obtain a brand new one.\n\nEvolutive Passive:\n\nEvolution Effect: The healing effectiveness increases as more abilities of the Mechanitor Psy-Tree are unlocked. (1% per ability, 1% base heal. Prioritizes critically damaged parts. 0.1 HP minimum heal).\n\nFinal Evolution: Allows mechanoids to passively recover their missing parts.\n\nEvolution Requirement: Fully master the Mechanitor Psy-Tree.</description>
 	<iconPath>UI_Mechanitor/Abilities/StructuralReconstruction_STNL</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_StructuralReconstruction</abilityClass>
@@ -57,7 +57,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_EngagedAmbushMode</defName>
-	<label>Precept: Ambush</label>
+	<label>Precept: ambush</label>
 	<description>Psychically hack an experimental ambush precept into a mechanoid, causing it to go invisible until an offensive action is taken. Very effective on worker models, allowing them to continue work while staying mostly undetected.</description>
 	<iconPath>UI_Mechanitor/Abilities/Stealth</iconPath>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -100,7 +100,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Mechanitor_LightWeight_Summon_STNL</defName>
-	<label>Summon Light Mechanoid</label>
+	<label>Summon light mechanoid</label>
 	<description>Abduct and psychically manipulate a light class mechanoid to add it to the caster's control network.</description>
 	<iconPath>UI_Mechanitor/Abilities/LightWeightSummonSTNL</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_SpawnFromPoolSTNL</abilityClass>
@@ -138,7 +138,7 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_StealthSTNL</defName>
-	<label>Engage Stealth</label>
+	<label>Engage stealth</label>
 	<description>Psychically shroud the mechanoid in light-refracting archites, causing it to become virtually invisible. This effect cannot be sustained for long but allows the mechanoid to keep attacking without revealing itself.</description>
 	<iconPath>UI_Mechanitor/Abilities/Ambush</iconPath>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -186,7 +186,7 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_ReinforceSTNL</defName>
-	<label>Reinforce Mech</label>
+	<label>Reinforce mech</label>
 	<description>Psychically enchant the mechanoid's component with a low energy archite field that reduces the amount of damage taken upon being hit.</description>
 	<iconPath>UI_Mechanitor/Abilities/DeltaReinforce</iconPath>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -222,7 +222,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_RechargeMechSTNL</defName>
-	<label>Recharge Mech</label>
+	<label>Recharge mech</label>
 	<description>Reactivate the chemicals present within the mechanoid's battery to recharge it.\n\nEnabling autocast will enable this mechanitor to automatically recharge their mechanoids at a distance at the cost of reduced psyfocus efficiency.</description>
 	<iconPath>UI_Mechanitor/Abilities/RechargeMechSTNL</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_RechargeMechanoid</abilityClass>
@@ -268,7 +268,7 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_ShutDownSTNL</defName>
-	<label>Epsilon Shutdown</label>
+	<label>Epsilon shutdown</label>
 	<description>Psychically hack the target mechanoid to shut it off.</description>
 	<iconPath>UI_Mechanitor/Abilities/EpsilonHack</iconPath>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -306,7 +306,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_OverdriveSTNL</defName>
-	<label>Optimize Mech</label>
+	<label>Optimize mech</label>
 	<description>Psychically rewrite the code of the mechanoid's internal subroutines to remove unnecessary safety measures, allowing the mechanoid to move and fight faster.</description>
 	<iconPath>UI_Mechanitor/Abilities/AlphaOptimize</iconPath>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -343,7 +343,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Mechanitor_MediumWeight_Summon_STNL</defName>
-	<label>Summon Medium Class Mechanoid</label>
+	<label>Summon medium class mechanoid</label>
 	<description>Abduct and psychically manipulate a medium class mechanoid to add it to the caster's control network.</description>
 	<iconPath>UI_Mechanitor/Abilities/MedWeightSummonSTNL</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_SpawnFromPoolSTNL</abilityClass>
@@ -381,7 +381,7 @@
 
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase" MayRequire="rabiosus.autoblink">
 		<defName>VPE_BlinkPreceptSTNL</defName>
-		<label>Precept: Blink</label>
+		<label>Precept: blink</label>
 	<description>Generate a miniature skipgate within the target creature, allowing automatic teleportation during their work.\n\nUse on organic targets is possible but not recommended due to the experimental nature of this precept.</description>
 		<iconPath>UI_Mechanitor/Abilities/BlinkUpgradeSTNL</iconPath>
 		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -419,7 +419,7 @@
 	
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_MechstripSTNL</defName>
-	<label>Mechanitor Precept: Total Conversion</label>
+	<label>Mechanitor precept: total conversion</label>
 	<description>Strip the mechanoid's systems out of the grasp of the mech-hive, the mechanoid will be bound to the caster if the latter has a mechlink.</description>
 	<iconPath>UI_Mechanitor/Abilities/MechBreak</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_TotalConversion</abilityClass>
@@ -453,7 +453,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Mechanitor_HeavyWeight_Summon_STNL</defName>
-	<label>Summon Heavy Class Mechanoid</label>
+	<label>Summon heavy class mechanoid</label>
 	<description>Abduct and psychically manipulate a heavy class mechanoid to add it to the caster's control network.</description>
 	<iconPath>UI_Mechanitor/Abilities/HeavyWeightSummonSTNL</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_SpawnFromPoolSTNL</abilityClass>
@@ -491,7 +491,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_BandwidthAssistSTNL</defName>
-		<label>Assisted Control</label>
+		<label>Assisted control</label>
 		<description>Permanently halve the bandwidth cost of the target mechanoid.</description>
 		<iconPath>UI_Mechanitor/Abilities/Control</iconPath>
 		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -580,7 +580,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Mechanitor_UltraHeavyWeight_Summon_STNL</defName>
-	<label>Summon Elite Class Mechanoid</label>
+	<label>Summon elite class mechanoid</label>
 	<description>Abduct and psychically manipulate an elite class mechanoid to add it to the caster's control network.</description>
 	<iconPath>UI_Mechanitor/Abilities/EliteMechSummonSTNL</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_SpawnFromPoolSTNL</abilityClass>
@@ -620,7 +620,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_MililinkSTNL</defName>
-	<label>Mind-Link</label>
+	<label>Mind-link</label>
 	<description>Link the caster's psylink to the target mechanoid's subcore, resulting in both entities powering each other up.\n\nCaster: Halved psyfocus and heat cost from psycasts\n\nMechanoid: Doubled consciousness and attack speed.</description>
 	<iconPath>UI_Mechanitor/Abilities/Milink</iconPath>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -670,7 +670,7 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_FireTurretSTNL</defName>
-	<label>Project Omega: Inferno</label>
+	<label>Project omega: inferno</label>
 	<description>Hack a distant mechanoid factory to produce an inferno auto turret and skip it directly to you.</description>
 	<iconPath>UI_Mechanitor/Abilities/Inferno</iconPath>
 	<castTime>500</castTime>
@@ -705,7 +705,7 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_MechTurretSTNL</defName>
-	<label>Project Zeta: Charge</label>
+	<label>Project zeta: charge</label>
 	<description>Hack a distant mechanoid factory to produce a charge blaster auto turret and skip it directly to you.</description>
 	<iconPath>UI_Mechanitor/Abilities/Charge</iconPath>
 	<castTime>500</castTime>
@@ -740,7 +740,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_MortarTurretSTNL</defName>
-	<label>Project Alpha: Mortar</label>
+	<label>Project alpha: mortar</label>
 	<description>Hack a distant mechanoid factory to produce an auto mortar and skip it directly to you.</description>
 	<iconPath>UI_Mechanitor/Abilities/Automortar</iconPath>
 	<castTime>500</castTime>
@@ -777,7 +777,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_MechmindlinkSTNL</defName>
-	<label>Psy-Mechlink upgrade</label>
+	<label>Psy-mechlink upgrade</label>
 	<description>Uses the power of the psylink to upgrade the mechlink granting the user +10 Bandwidth and +1 additional control group per cast up to 10 times.</description>
 	<iconPath>UI_Mechanitor/Abilities/Upgrade</iconPath>
 	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -806,7 +806,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_Mechanitor_GlobalUpgrade_STNL</defName>
-	<label>Mech Network Upgrade</label>
+	<label>Mech network upgrade</label>
 	<description>Quickly alter all controlled mechanoids in this mechanitor's network with a selection of various experimental modifications.</description>
 	<iconPath>UI_Mechanitor/Abilities/NetworkUpgrade_STNL</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_NetworkUpgrade</abilityClass>

@@ -5,7 +5,7 @@
 	<!-- Summon mech biotech -->
 	<VPE_SelectMechToProduceSTNL>Select a mech to produce:</VPE_SelectMechToProduceSTNL>
 	<!-- Specific mechanoid -->
-	<VPE_MechanoidsToDropSTNL>Mechanoids to drop: {0}</VPE_MechanoidsToDropSTNL>
+	<VPE_MechanoidsToDropSTNL>Mechanoids to summon: {0}</VPE_MechanoidsToDropSTNL>
 	<!-- ====Confirmation Window==== -->
 	<VPE_ConfirmSelection_STNL>Confirm Selection:</VPE_ConfirmSelection_STNL>
 	<VPE_MechName_STNL>{0}</VPE_MechName_STNL>
@@ -15,4 +15,17 @@
 	<VPE_ArmorHeat_STNL>Armor (Heat): {0}</VPE_ArmorHeat_STNL>
 	<VPE_ConfirmButton_STNL>Confirm</VPE_ConfirmButton_STNL>
 	<VPE_CancelButton_STNL>Return</VPE_CancelButton_STNL>
+	<!-- Detection -->
+	<VPE_Mechanitor_DetectionPCT_STNL>Detection chance: {0}%</VPE_Mechanitor_DetectionPCT_STNL>
+		<VPE_Mechanitor_DetectionDisabled_STNL>Detection disabled</VPE_Mechanitor_DetectionDisabled_STNL>
+	<VPE_Mechanitor_DetectedLetter_Label_STNL>Detection: Mech cluster</VPE_Mechanitor_DetectedLetter_Label_STNL>
+	<VPE_Mechanitor_DetectedLetter_Description_STNL>The mechanoid hive detected your hacking attempt and has deployed a mech cluster in the area.\n\nThreat level was: {0}.</VPE_Mechanitor_DetectedLetter_Description_STNL>
+	<!-- Settings -->
+	<VPE_Mechanitor_Settings_MechanoidSummonSkills_STNL>Mechanoid summon skills:</VPE_Mechanitor_Settings_MechanoidSummonSkills_STNL>
+	<VPE_Mechanitor_Settings_MechanoidSummonSkills_RiskToggle_STNL>Should there be a chance to summon a hostile mech cluster?</VPE_Mechanitor_Settings_MechanoidSummonSkills_RiskToggle_STNL>
+	<VPE_Mechanitor_Settings_MechanoidSummonSkills_SmallRisk_STNL>Chance per light mechanoid: {0}%</VPE_Mechanitor_Settings_MechanoidSummonSkills_SmallRisk_STNL>
+	<VPE_Mechanitor_Settings_MechanoidSummonSkills_MediumRisk_STNL>Chance per medium mechanoid: {0}%</VPE_Mechanitor_Settings_MechanoidSummonSkills_MediumRisk_STNL>
+	<VPE_Mechanitor_Settings_MechanoidSummonSkills_HeavyRisk_STNL>Chance per heavy mechanoid: {0}%</VPE_Mechanitor_Settings_MechanoidSummonSkills_HeavyRisk_STNL>
+	<VPE_Mechanitor_Settings_MechanoidSummonSkills_MaxRisk_STNL>Chance per elite mechanoid: {0}%</VPE_Mechanitor_Settings_MechanoidSummonSkills_MaxRisk_STNL>
+	<VPE_Mechanitor_Settings_MechanoidSummonSkills_Threat_Points_STNL>Threat points for threat level {0}: {1}</VPE_Mechanitor_Settings_MechanoidSummonSkills_Threat_Points_STNL>
 </LanguageData>
