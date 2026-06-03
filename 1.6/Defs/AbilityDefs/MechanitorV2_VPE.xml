@@ -223,7 +223,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_RechargeMechSTNL</defName>
 	<label>Recharge mech</label>
-	<description>Reactivate the chemicals present within the mechanoid's battery to recharge it.\n\nEnabling autocast will enable this mechanitor to automatically recharge their mechanoids at a distance at the cost of reduced psyfocus efficiency.</description>
+	<description>Reactivate the chemicals present within the mechanoid's battery to recharge it.\n\nEnabling autocast will enable this mechanitor to automatically recharge their mechanoids at a distance with reduced efficiency.</description>
 	<iconPath>UI_Mechanitor/Abilities/RechargeMechSTNL</iconPath>
 	<abilityClass>VPE_MechanitorSTNL.Ability_RechargeMechanoid</abilityClass>
 	<castSound>Psycast_Skip_Pulse</castSound>
@@ -885,28 +885,36 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_ApoSTNL</defName>
 	<label>Mechanitor Precept: Apocritia</label>
-	<description>Uses the power of the psylink to upgrade the mechlink for a duration of 24hrs, granting to this mechanitor the ability to resurrect any mechanoid during that time.</description>
+	<description>Repair and resurrect the target mechanoid by remotely mending its components. The process will drain the target mechanoid's energy down to 10% of its maximum value.</description>
 	<iconPath>UI_Mechanitor/Abilities/Apocritia</iconPath>
-	<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+	<abilityClass>VPE_MechanitorSTNL.Ability_ResurrectMechanoid</abilityClass>
 	<goodwillImpact>0</goodwillImpact>
-	<castTime>30</castTime>
-		<chance>0</chance>
-	<targetMode>Self</targetMode>
+	<castTime>240</castTime>
+	<range>25.9</range>
+	<radius>5.9</radius>
+	<chance>0</chance>
+	<targetMode>Location</targetMode>
+		<targetingParameters>
+		<canTargetLocations>True</canTargetLocations>
+		<canTargetSelf>False</canTargetSelf>
+		<canTargetAnimals>False</canTargetAnimals>
+		<canTargetPawns>False</canTargetPawns>
+		<canTargetHumans>False</canTargetHumans>
+		<canTargetMechs>False</canTargetMechs>
+	</targetingParameters>
 	<castSound>Psycast_Skip_Pulse</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
 			<path>VPE_MechanitorV2STNL</path>
 			<level>8</level>
 			<order>3</order>
-			<psyfocusCost>0.10</psyfocusCost>
+			<psyfocusCost>0.30</psyfocusCost>
 			<entropyGain>80</entropyGain>
 			<prerequisites>
 				<li>VPE_MortarTurretSTNL</li>
 			</prerequisites>
 		</li>
-		<li Class="VEF.Abilities.AbilityExtension_Hediff">
-			<hediff>Apocriton-linkSTNL</hediff>
-		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
+
 </Defs>

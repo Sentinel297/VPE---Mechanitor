@@ -28,4 +28,9 @@
 	<VPE_Mechanitor_Settings_MechanoidSummonSkills_HeavyRisk_STNL>Chance per heavy mechanoid: {0}%</VPE_Mechanitor_Settings_MechanoidSummonSkills_HeavyRisk_STNL>
 	<VPE_Mechanitor_Settings_MechanoidSummonSkills_MaxRisk_STNL>Chance per elite mechanoid: {0}%</VPE_Mechanitor_Settings_MechanoidSummonSkills_MaxRisk_STNL>
 	<VPE_Mechanitor_Settings_MechanoidSummonSkills_Threat_Points_STNL>Threat points for threat level {0}: {1}</VPE_Mechanitor_Settings_MechanoidSummonSkills_Threat_Points_STNL>
+	
+	<!-- Structural reconstruction -->
+	<VPE_Mechanitor_Settings_StructuralReconstruction_STNL>Structural reconstruction:</VPE_Mechanitor_Settings_StructuralReconstruction_STNL>
+	<VPE_Mechanitor_Settings_StructuralReconstruction_KeepMechsYoung_STNL>Should this ability prevent mechanoids from becoming green?</VPE_Mechanitor_Settings_StructuralReconstruction_KeepMechsYoung_STNL>
+	<VPE_Mechanitor_Settings_StructuralReconstruction_KeepMechsYoung_Description_STNL>Mechanoids become tainted once they become too old, this setting locks their age to 0 ticks to keep them clean.</VPE_Mechanitor_Settings_StructuralReconstruction_KeepMechsYoung_Description_STNL>
 </LanguageData>
